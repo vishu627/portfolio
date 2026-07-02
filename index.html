@@ -1,126 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Manjeet Singh | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manjeet Singh | Portfolio</title>
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
+    <link rel="stylesheet" href="style.css">
 
-body{
-background:#f3f2ef;
-}
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-header{
-background:#0A66C2;
-color:white;
-padding:40px;
-text-align:center;
-}
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-.profile{
-width:90%;
-max-width:1000px;
-margin:30px auto;
-background:white;
-padding:30px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,.1);
-}
-
-img{
-width:150px;
-height:150px;
-border-radius:50%;
-display:block;
-margin:auto;
-}
-
-h2{
-margin-top:15px;
-text-align:center;
-}
-
-.section{
-margin-top:30px;
-}
-
-.section h3{
-color:#0A66C2;
-margin-bottom:10px;
-}
-
-ul{
-padding-left:20px;
-}
-
-footer{
-text-align:center;
-padding:20px;
-color:#555;
-}
-</style>
 </head>
 
 <body>
 
+<!-- ================= NAVBAR ================= -->
+
 <header>
-<h1>Manjeet Singh</h1>
-<p>Medical Billing | AI Content Creator | Web Developer</p>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<h2>Manjeet Singh</h2>
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#certificates">Certificates</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<div class="menu-btn">
+<i class="fa-solid fa-bars"></i>
+</div>
+
+</nav>
+
 </header>
 
-<div class="profile">
+<!-- ================= HERO ================= -->
 
-<img src="profile.jpg" alt="Profile">
+<section id="home" class="hero">
 
-<h2>About Me</h2>
+<div class="hero-left">
+
+<h4>Hello 👋 I'm</h4>
+
+<h1>Manjeet Singh</h1>
+
+<h3>B.Tech CSE Student</h3>
+
 <p>
-Passionate about AI automation, web development, medical billing, and content creation.
+
+Passionate about Web Development,
+Cloud Computing, Python and Cyber Security.
+I enjoy building modern websites while
+continuously improving my technical skills.
+
 </p>
 
-<div class="section">
-<h3>Experience</h3>
-<ul>
-<li>Medical Billing Executive</li>
-<li>AI Content Creator</li>
-</ul>
+<div class="hero-buttons">
+
+<a href="#contact" class="btn">Hire Me</a>
+
+<a href="assets/resume/resume.pdf" class="btn2" download>
+
+Download Resume
+
+</a>
+
 </div>
 
-<div class="section">
-<h3>Education</h3>
-<ul>
-<li>Bachelor's Degree</li>
-</ul>
-</div>
+<div class="social-icons">
 
-<div class="section">
-<h3>Skills</h3>
-<ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>JavaScript</li>
-<li>AI Tools</li>
-<li>Medical Billing</li>
-</ul>
-</div>
+<a href="#"><i class="fab fa-github"></i></a>
 
-<div class="section">
-<h3>Contact</h3>
-<p>Email: your@email.com</p>
-<p>LinkedIn: linkedin.com/in/manjeet-singh</p>
+<a href="#"><i class="fab fa-linkedin"></i></a>
+
+<a href="mailto:vishusingh11806@gmail.com">
+
+<i class="fas fa-envelope"></i>
+
+</a>
+
 </div>
 
 </div>
 
-<footer>
-© 2026 Manjeet Singh
-</footer>
+<div class="hero-right">
+
+<img src="assets/images/profile.jpg"
+alt="Manjeet Singh">
+
+</div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+<h2 class="section-title">
+
+About Me
+
+</h2>
+
+<div class="about-container">
+
+<div class="about-card">
+
+<p>
+
+Hi! I'm <strong>Manjeet Singh</strong>,
+a Computer Science Engineering student
+at <strong>Arni University, Indora</strong>.
+
+I belong to
+<strong>Kangra, Himachal Pradesh</strong>.
+
+I'm passionate about learning modern technologies
+and building responsive websites.
+
+I have knowledge of HTML, CSS,
+Python, Cloud Computing (AWS),
+Git, GitHub and basic programming.
+
+I believe in continuous learning,
+hard work and adaptability.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills">
+
+<h2 class="section-title">
+
+Technical Skills
+
+</h2>
+
+<div class="skills-container">
+
+<div class="skill-card">
+
+<i class="fab fa-html5"></i>
+
+<h3>HTML5</h3>
+
+</div>
+
+<div class="skill-card">
+
+<i class="fab fa-css3-alt"></i>
+
+<h3>CSS3</h3>
+
+</div>
+
+<div class="skill-card">
+
+<i class="fab fa-js"></i>
+
+<h3>JavaScript</h3>
+
+</div>
+
+<div class="skill-card">
+
+<i class="fab fa-python"></i>
+
+<h3>Python</h3>
+
+</div>
+
+<div class="skill-card">
+
+<i class="fab fa-git-alt"></i>
+
+<h3>Git</h3>
+
+</div>
+
+<div class="skill-card">
+
+<i class="fab fa-github"></i>
+
+<h3>GitHub</h3>
+
+</div>
+
+<div class="skill-card">
+
+<i class="fa-solid fa-cloud"></i>
+
+<h3>AWS Cloud</h3>
+
+</div>
+
+<div class="skill-card">
+
+<i class="fa-brands fa-linux"></i>
+
+<h3>Linux</h3>
+
+</div>
+
+</div>
+
+</section>
 
 </body>
 </html>
