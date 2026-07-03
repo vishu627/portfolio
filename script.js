@@ -20,12 +20,23 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
         e.preventDefault();
 
-        const target = document.querySelector(this.getAttribute("href"));
-
-        if (target) {
-            target.scrollIntoView({
+        const href = this.getAttribute("href");
+        if (href === "#") {
+            window.scrollTo({
+                top: 0,
                 behavior: "smooth"
             });
+        } else {
+            try {
+                const target = document.querySelector(href);
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: "smooth"
+                    });
+                }
+            } catch (err) {
+                console.error("Invalid selector:", href, err);
+            }
         }
 
         if (navLinks) {
